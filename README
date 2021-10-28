@@ -1,0 +1,525 @@
+To run part 1-3:
+
+> ./test.py
+
+Ouptuts information for twitter users given in list defined in script
+Finds followers, following, and friends (following and follower)
+Prints last 50 tweets containing user defined keywords
+Prints last 50 tweets from Dayton, Ohio (25 mi radius)
+
+
+In order to run, const.py file must contain defined variables:
+
+API_KEY
+API_SECRET_KEY
+BEARER_TOKEN
+ACCESS_TOKEN
+ACCESS_SECRET_TOKEN
+
+Example Output: 
+PS D:\Documents\School\Grad\CPS570\twitter_crawler> ./test.py
+Verification Successful.
+
+User name: Sully
+Screen name: sullymygoodname
+User ID: 348563769
+Location: Chicago
+User Description: Famous A10 Basketball Scholar. Yinzer. Dayton Flyer. The UD Bball Podcast Guy @talkingoutlowd Flyers pregame host on ESPN 1410AM in Dayton. #LOWD ambassador of
+The Number of followers: 3759
+The Number of friends: 1993
+The Number of tweets (i.e., statuses): 45589
+User URL: https://t.co/zOzCQN21x5
+Screen name: sullymygoodname
+follower: j_kouwg
+follower: PeterGr08943557
+follower: GBpickem       
+follower: Mike604110161  
+follower: RickyDubsTho   
+follower: DPreuett91     
+follower: Johnny_Hop     
+follower: KTdid1969      
+follower: LefaithApparel1
+follower: TerranceWhite_ 
+follower: GUSEBASKETBALL 
+follower: Bot123497474571
+follower: ZackBeck1      
+follower: ZacharyHoov3r  
+follower: nfro73
+follower: markiedoug     
+follower: jackjaypalmer  
+follower: KhalifBettis   
+follower: coachgoblue    
+follower: Oliver_alfie_  
+follower: danooli_dani
+follower: Danny5gross    
+follower: TheFloridaHills
+follower: matthewwinick  
+follower: JeremiahLaVell3
+follower: BobRossAuto    
+follower: dd60264224     
+follower: BGansler       
+follower: ktesny
+follower: pentasuglio    
+follower: Milligan_24    
+follower: ChristinaOhio  
+follower: MattWalsh55
+follower: keepingitbucci
+follower: seandunphy77
+follower: AntwanTLawrence
+follower: MarconiGregory
+follower: JulieA_Peterson
+follower: CraytonStefan
+follower: willy_will09
+follower: KevinAdams26
+follower: james_brill1
+follower: SeanBurrows20
+follower: e_browne7
+follower: MissionsDynamic
+follower: Smooth_Jordan
+follower: CorinnSiefring
+follower: Jason
+follower: Imartinez56
+follower: EmilojuMicheal
+Following: brendanperson
+Following: JaysonKing26
+Following: SchreierA
+Following: whodeycom
+Following: annamarie_feiny
+Following: WERUD95
+Following: jkud95
+Following: kevinmdraper
+Following: Camlenard
+Following: Pete_Lundak
+Following: ZacharyHoov3r
+Following: annin328
+Following: vn2saints
+Following: andrewdouglash
+Following: matthewwinick
+Following: eamonnbrennan
+Following: dlolley_pgh
+Following: cfredecker
+Following: Logan25Nourse
+Following: TheMielcMan
+Following: Clane_15
+Following: Milligan_24
+Following: RickyDubsTho
+Following: MattWalsh55
+Following: keepingitbucci
+Following: seandunphy77
+Following: Drewlowis
+Following: RTrain754
+Following: 3sticksIII
+Following: TheFloridaHills
+Following: mega__thomas
+Following: BradleeElders
+Following: james_brill1
+Following: SamuelJames445
+Following: elizabethtk131
+Following: nicastephens
+Following: MissionsDynamic
+Following: jackiesherick
+Following: andrewfinlay22
+Following: AlexiLalas
+Following: TheWilderThings
+Following: AmatoArts
+Following: _EllaBrown
+Following: TheJJammer
+Following: RandleRant
+Following: GingaStoleYaGal
+Following: NikRomes23
+Following: joedurham55
+Following: Rumpke_Marc
+Following: JHuffman1575
+friend: RickyDubsTho
+friend: ZacharyHoov3r
+friend: TheFloridaHills
+friend: matthewwinick
+friend: Milligan_24
+friend: MattWalsh55
+friend: keepingitbucci
+friend: seandunphy77
+friend: james_brill1
+friend: MissionsDynamic
+From keywords: PaulPoteet: Indiana's Weather Update: (Via @NWSIndianapolis.) Severe Thunderstorm Warning continues for Lafayette IN, Crawfords… https://t.co/r2yoLJgEnZ
+From keywords: PaulPoteet: Indiana's Weather Update: (Via @NWSIndianapolis.) Severe Thunderstorm Warning including Lafayette IN, Crawfordsvill… https://t.co/8288qowV4V
+From keywords: BrownCtyWeathOH: NWSILN: Another very warm day today - and the last 30 days around here per @MidwestClimate Perspectives Tool indica… https://t.co/IJ5ovujLIq
+From keywords: RmbaileyRob: RT @NWSILN: Another very warm day today - and the last 30 days around here per @MidwestClimate Perspectives Tool indicates our last 30 days…
+From keywords: ECISKYWARN: RT @NWSILN: Another very warm day today - and the last 30 days around here per @MidwestClimate Perspectives Tool indicates our last 30 days…
+From keywords: NWSILN: Another very warm day today - and the last 30 days around here per @MidwestClimate Perspectives Tool indicates our… https://t.co/IEyLIH4rtx
+From keywords: ohio247now: Fall weather seems to be on the way for the Dayton area. @Adrianna247Now has your forecast.
+
+https://t.co/CRVAazbyPf
+From keywords: dayton_judith: RT @DelgadoforNY19: New York has 1,702 bridges &amp; over 7,292 miles of highway in poor condition. Extreme weather events have cost us up to $…
+From keywords: NWOhioWeather: @BrutusX4K @WxJoeA That indicates where rain/storm chances exist. Severe weather risk tomorrow and tomorrow night w… https://t.co/NDNufxkHoB
+From keywords: BrutusX4K: @AndrewKozakTV how’s the weather looking in Dayton this weekend into the work week ?
+From keywords: CF3_Weather: RT @onefreedrink: @NWSDesMoines we are getting for field spinners (because I don’t know the technical term) j ust west of harcourt over the…
+From keywords: dj3000robot: Hey, hey. How about that weather out there, Dayton? 67°F, Overcast for the hour.
+From keywords: StormWarnWx: @WeatherNation Yes you may. Credit Storm Warn Weather Dayton (@StormWarnWx) pls
+From keywords: WDTNKelleyKing: RT @JamieJarosik: We're starting to see some school delays come in because of Fog. Full list here:
+https://t.co/jDIU8gsDCm  #daywx #Dayton
+From keywords: wxdoc: RT @JamieJarosik: We're starting to see some school delays come in because of Fog. Full list here:
+https://t.co/jDIU8gsDCm  #daywx #Dayton
+From keywords: JamieJarosik: We're starting to see some school delays come in because of Fog. Full list here:
+https://t.co/jDIU8gsDCm  #daywx #Dayton
+From keywords: JamieJarosik: Weather check from Ft. Loramie at 5:30am: Dense fog &amp; 58-degrees. Lots of clouds through lunch, then some gradual sunshine. #daywx #Dayton
+From keywords: JaQuaneParker2: RT @JamieJarosik: Areas of rain or small and scattered at 2:30pm, but coverage may increase over the next couple of hours. Check out the st…
+From keywords: BrutusX4K: RT @JamieJarosik: Areas of rain or small and scattered at 2:30pm, but coverage may increase over the next couple of hours. Check out the st…
+From keywords: JamieJarosik: Areas of rain or small and scattered at 2:30pm, but coverage may increase over the next couple of hours. Check out… https://t.co/KPbhhrfX51
+From keywords: CarlySmithWX: RT @JamieJarosik: Lots of clouds out there as the sun is coming up! We expect dry weather in most spots through lunchtime. A better chance…
+From keywords: WDTN_Brian: RT @JamieJarosik: Lots of clouds out there as the sun is coming up! We expect dry weather in most spots through lunchtime. A better chance…
+From keywords: JamieJarosik: Lots of clouds out there as the sun is coming up! We expect dry weather in most spots through lunchtime. A better c… https://t.co/MINO2X17Xh
+From keywords: BrutusX4K: @SteveNorrisTV how’s the weather looking here in Dayton this week. It seems every day has a chance for rain
+From Dayton: brwnsounds: I made beat https://t.co/ywP5qLqxjG
+From Dayton: Caesar937: @JayB2113 This pure madness bro, blinked and all that time went by
+From Dayton: cburton228: Based on the way this person is talking, they should seek psychiatric help and likely would harm anyone who has a d… https://t.co/6KX3GoiRRz
+From Dayton: auriyon24: I have the worst headache
+From Dayton: flickster: @Brendon_Thomas @GolfersJournal It’s been awesome connecting with new people. I appreciate the opportunity. Can’t w… https://t.co/znWhmZGrE9
+From Dayton: prma_2: @SesameSpeedster @whinnaay Good luck everyone :) thanks for hosting!!! https://t.co/Sn2xBpGgYM
+From Dayton: hashwinii: not kat asking me persistently to sleep beside her when I clearly dont want to cause she takes 3/4 of the space 🤣 @iamkatt2212
+From Dayton: huffshottakes: @danorlovsky7 @Giants You are making it too easy for @stephenasmith man. Giants are not getting a chip if every sta… https://t.co/dN2JVuljfP
+From Dayton: itzmoneymike: @King_Dwb4 😭😭😭 gotta follow outta town people or something
+From Dayton: Ricklink5: @MelBellesHell Hope I'm not
+From Dayton: spidergwyn: @EvanLSantiago @gh0ul_beast It’s maybe the least right tweet I’ve read in months, and that’s saying a lot.
+From Dayton: Ch0colate937: I’m just cooking for myself tonight.. BUT.. I feel like I should add “Chicken and Waffle Bowls” to the menu. Spice… https://t.co/dQ2PzFwCVz
+From Dayton: ohseafarer: @inlovewithnight Yes he's endured enough sports press to have heard it a million times
+From Dayton: jjhwifeeu: @Scuffinn @dropwtf done
+From Dayton: justin0862: @chillheart1789 @FSAPOJake Cool.. that was in the past now. Who cares.
+From Dayton: coachjchunt27: @Nonickname513 I know you might not believe it but UC’s D-Line would absolutely work OSU… Respectfully…
+From Dayton: spidergwyn: @EvanLSantiago @gh0ul_beast The tweet you quoted set up a straw man—a weird claim that the marketing has just been… https://t.co/G3YLTEZiia
+From Dayton: WakefieldAliya: I really want a caesar salad from Texas Roadhouse 😪
+From Dayton: jinprk21: @vur0ki real
+From Dayton: RickLeeJames: I am here for you. https://t.co/isHPBY79ro
+From Dayton: JoatBurrow: This Trae Waynes situation has to be a joke right?
+From Dayton: raychelrayyy: Mesiah loves Mo3 lol. It’s crazy
+From Dayton: laidback_momma: @meantomyself it’s those little things, especially when you were married to someone who never mowed the grass
+From Dayton: JuicyJ49: @AQ_Be_Foolin @ScaryStoriesMov Dang are they making more?! 🥴
+From Dayton: RedHelicam: @GOPChairwoman Anyone with half a brain knows the filthy, dirty tar sands was never for US market.
+From Dayton: simplyliving4: @JimCassidy48 Mike Pence and his version of God's words. The sick and poor should suffer uncomfortably. Did that co… https://t.co/bkhEa61DOY
+From Dayton: Imkingb0ss: A reminder if Zendaya and Tom stop playing it’s over for all couples… https://t.co/AcStfii5At
+From Dayton: centerville_vb: @RussiaVball Thanks for coming out tonight.
+From Dayton: SweetTreatLibra: @911onFOX watching this scene with @ImAngelaBassett I'm like she still got them bomb ass Tina Turner arms! She better not skip arm day
+From Dayton: csweeney05: @1800callPaul I had a horrible day, please follow through
+From Dayton: kwtaylorwriter: @IDKayyyyy Oh gosh I have an even older Apple in my attic. It still worked as of about ten years ago.
+From Dayton: EscMiami: Field trip to Fulton Farms! 🎃 https://t.co/4ao7zmMed8
+From Dayton: BekaXDBot: I like education, I’ve used every social media.
+From Dayton: zcrawford2: @bugden_david @Bennythesnitch @4everNeverTrump @JoshMandelOhio This is the first time I’ve ever heard anyone say it… https://t.co/lzBpevbUnv
+From Dayton: HALDROB: You don’t even care and that’s cool.
+From Dayton: KnightsMomsSqd: Congratulations Smalls! https://t.co/ow6fq77yWi
+From Dayton: cburton228: @RFSwitchArt @CassieCeleste That's right! We're longtime friends and you know me perfectly well enough to know that… https://t.co/BrFjIJUxcQ
+From Dayton: Minniesmom69: @patriottakes Have no fear, we’ll let Darwin take care of this one
+From Dayton: 17POSITIONS: they aren’t even pretending to be excited
+From Dayton: lifeinidle: My track "Waterwell" has been added to the @distrokid playlist, "Wheel of Playlist" https://t.co/drQ0dU7WP8 #spotify #playlist #distrokid
+From Dayton: childgolden: @dharmann Kid WON'T SHOW MOM Report Card (Behind The Scenes) | Dhar Mann Studios https://t.co/p8ZMZsjIWC via @YouTube
+From Dayton: htsweetty: @lauramarano love you Laura hope you have been drinking water and getting rest had a tough day with my client today… https://t.co/UZrtMTA7if
+From Dayton: maddiehys: listen, i’m one of those bitches: venom is sexy
+From Dayton: DajaSimone_Hair: He said “I told him that picture had a special message in the back for me, he didn’t care and I was hungry” 😂😂
+From Dayton: reeceecup: Jason Aldean defends wife for dressing toddlers in anti-Biden shirts: 'We will teach our kids what we think is righ… https://t.co/a7LOFxPtNv
+From Dayton: SquidShroom: @darreldrowland Except…isn’t the proposed tax rate like 36%…..NO THANK YOU
+From Dayton: StoryQ12: @BLKJonGotti2x The whole crew tho! 🙃🙃🙃
+From Dayton: robinstillrocks: @acroce66 'Defending Your Life' (1991) for me. Plus, moreso than any other what happens when you die movie, I think… https://t.co/IvexfW3Ydm
+From Dayton: DjGrizz739: @OWAnonymous_ @SpynorOW submission
+
+
+
+
+To run part 4:
+
+> ./news_scraper.py
+
+Gets 20 most recent tweets from news sources, compiles them into a string and emails them to the defined email address for a daily briefing
+Note, in order to run, the gmail account from which emails are being sent must allow third party app access and keyring must be installed (pip install keyring)
+Upon first use of program, it will prompt you for your gmail password (managed by keyring)
+
+example output:
+
+PS D:\Documents\School\Grad\CPS570\twitter_crawler> .\news_scraper.py
+Verification Successful.
+EMAIL CONTENTS: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Source: CNN
+--------------------------------------
+at 2021-10-24 14:15:07: Colombia's most-wanted drug lord Otoniel has been captured by authorities in what has been heralded as the biggest blow to the country's narcotics traffickers in decades. https://t.co/1Dl2PkD2LS
+--------------------------------------
+at 2021-10-24 14:01:05: A Mach 5 passenger aircraft could travel from New York to London in just 90 minutes. This startup says it's possible https://t.co/Fx8pRBidMj
+--------------------------------------
+at 2021-10-24 13:30:07: Unilever -- the company behind Dove and Ben &amp; Jerry's -- is hiking prices to cope with soaring supply chain costs and expects inflation to accelerate into next year. https://t.co/dwbJYtDfGL
+--------------------------------------
+at 2021-10-24 13:00:23: Hundreds of migrants have been arrested for criminal trespass in Texas over the last few months. They're held in jail, sometimes without legal help, for weeks. but many of the cases are dropped before prosecution. https://t.co/de2qd9g3JN
+--------------------------------------
+at 2021-10-24 12:31:07: Hollywood keeps retelling "Dune." Why this latest adaptation may be the one that takes off. https://t.co/Yxq21mPm4X
+--------------------------------------
+at 2021-10-24 12:15:04: A scuba diver has found a 900-year-old Crusader sword with a three-foot blade off the coast of Israel. https://t.co/j1nXNX6oUs
+--------------------------------------
+at 2021-10-24 12:01:11: "Stella Vita," a fully solar-powered campervan, has just driven through Europe without stopping for fuel or plugging in to charge. https://t.co/a2HD21HpVB
+--------------------------------------
+at 2021-10-24 11:45:04: Daniele Penney's dream house was supposed to be torn down by its owners, but she offered to move the house across an inlet to her nearby land. https://t.co/lN34hSLb7P https://t.co/Mm3AQwFyob
+--------------------------------------
+at 2021-10-24 11:30:06: As the Ahmaud Arbery trial starts, activists from across the country are showing up to support him and his family. https://t.co/icaTowPJGP
+--------------------------------------
+at 2021-10-24 11:15:13: Scientists have found the oldest aquatic animal preserved in amber — and it's the most complete crab fossil ever discovered. https://t.co/beluEz5lHD
+--------------------------------------
+at 2021-10-24 11:00:13: What started as a fairytale marriage for Princess Diana and Prince Charles ended in a series of affairs. See how the rift deepened between them in a new episode of the CNN Original Series #DianaCNN, tonight at 9 
+p.m. ET/PT https://t.co/nnvyKDRozt
+--------------------------------------
+at 2021-10-24 10:51:11: "We are headed for global energy crisis," says @FareedZakaria."The simplest explanation is the demand for energy is currently exceeding supply...but there is one common cause...we do not have sufficient green energy today to replace fossil fuels. We will, but not today." https://t.co/qePox12rId
+--------------------------------------
+at 2021-10-24 10:45:06: Thousands flocked to the Afghanistan airport earlier this year, hoping to get on an evacuation flight before it was too late. @ClarissaWard spoke to the people of Afghanistan during the Taliban take over. Hear their stories on this week's episode. https://t.co/IZkFqngGiV
+--------------------------------------
+at 2021-10-24 10:31:05: Vanessa Bryant, the widow of Kobe Bryant, said she learned about the basketball star's death when social media notifications began showing up on her phone -- hours before she got the official confirmation from the Los Angeles Sheriff's Department. https://t.co/aUMdTZDXj1
+--------------------------------------
+at 2021-10-24 10:15:04: Mammoths and other giant creatures of the Ice Age such as woolly rhinos survived longer than scientists thought, coexisting with humans for tens of thousands years before they vanished for good, according to new 
+research. https://t.co/IhiYwt2Axr
+--------------------------------------
+at 2021-10-24 10:06:45: Arkansas’s Republican Gov. Asa Hutchinson says mandates are deepening resistance to Covid-19 vaccination in his state.A mandate for state employees “would probably increase vaccination rates, but it would also increase the resistance of some,” he says. https://t.co/RV1khISKQq
+--------------------------------------
+at 2021-10-24 10:00:17: Authorities say Lebanon's traders have withheld 74% of the country's essential subsidized goods from the public. It has meant that many mothers can't feed their children and that sick people often do not have access to life-saving drugs https://t.co/myaxLndyww
+--------------------------------------
+at 2021-10-24 09:48:45: Treasury Secretary Janet Yellen says it’s “utterly essential” that Congress raise the debt ceiling before Dec. 3, calling it “inconceivable that America should prove itself unwilling to pay the bills it’s already incurred.”“I have confidence it will get done,” she adds. https://t.co/pkgoxLq4aT
+--------------------------------------
+at 2021-10-24 09:45:05: President Joe Biden will host critical moderate Sen. Joe Manchin and Senate Majority Leader Chuck Schumer at his Delaware home in a push to finalize an agreement on a sweeping economic and climate package, a White House official told CNN. https://t.co/RySkpUhPqQ
+--------------------------------------
+at 2021-10-24 09:31:11: Speaker Nancy Pelosi says Democrats are “almost there” on an agreement on a social safety net 
+bill which would also allow a bipartisan infrastructure bill to move forward."I think we're pretty much there now,” she tells @jaketapper. “…We're almost there." https://t.co/Hoj16v3YOx
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Source: NBC News
+--------------------------------------
+at 2021-10-24 14:16:03: Massachusetts State Police recover the presumed body of a 5-year-old boy from New Hampshire who was reported missing earlier this month, authorities say. https://t.co/BYYjqSpOKK
+--------------------------------------
+at 2021-10-24 14:01:06: "Saturday Night Live" gives President Biden a lift by bringing back his vice presidential days, with Jason Sudeikis reprising his old role as the VP. https://t.co/IkOJ3zIbac
+--------------------------------------
+at 2021-10-24 13:45:07: Americans are in total collective denial about how lethal our car dependency is. We have to stop normalizing the suffering caused by cars, Erin Sagen writes. https://t.co/1jlDVHVJ6x
+--------------------------------------
+at 2021-10-24 13:30:03: Education Sec. Cardona thinks harnessing the positive energy of surviving 2020 — and adding federal funds — may be the way to solve long-standing problems in American public education.Published in partnership with the @hechingerreport. https://t.co/kAjwxboECJ
+--------------------------------------
+at 2021-10-24 13:16:05: Upwards of 10,000 trees weakened by fires, drought, disease or age must be removed in the wake of California wildfires, work that will keep a nearby highway closed to visitors who seek the world’s 2 largest sequoia trees. https://t.co/dqIvs4Ql4C
+--------------------------------------
+at 2021-10-24 13:00:05: Wet and severe winter-like weather is forecast for much of the United States and could impact 
+108 million people through Tuesday. https://t.co/cN0zUbmSmT
+--------------------------------------
+at 2021-10-24 12:56:11: In observance of the 150th anniversary, local groups have been commemorating the race riot, which resulted in the murder of roughly 20 Chinese Americans — among the largest mass lynchings in American history. - @NBCAsianAmerica https://t.co/qaxOljeXBt
+--------------------------------------
+at 2021-10-24 12:45:05: Amanda Knox, the woman who was imprisoned in Italy and later acquitted in the murder of her British roommate, announces the birth of her first child. https://t.co/WoMQtBtrmx
+--------------------------------------
+at 2021-10-24 12:31:08: As a candidate, President Biden cast himself as an anti-Donald Trump. But as president, his China stances have, more often than not, echoed his predecessor’s — surprising even some China hawks. https://t.co/5JHf5Fp3UR
+--------------------------------------
+at 2021-10-24 12:16:03: President Biden to host Sens. Schumer and Manchin in Delaware as Democrats work to secure a deal on legislation that would enact the administration's social safety net agenda, 3 officials say. https://t.co/vw3A69N19Y
+--------------------------------------
+at 2021-10-24 12:01:12: Atlanta Braves head to the World Series for the first time since 1999 with a 4-2 victory over 
+the defending champion, the Los Angeles Dodgers. https://t.co/KODHNwiY1w
+--------------------------------------
+at 2021-10-24 11:45:06: Catastrophic floods in Germany, preceded by 3 consecutive summers of drought, bring a new urgency for many to find climate change solutions — and that impacts the country’s politics, too. https://t.co/FHenWFi3sK 
+--------------------------------------
+at 2021-10-24 11:30:08: Over 2,000 migrants walk out of a southern Mexico city where they have essentially been trapped while waiting for refugee or asylum papers that might allow them to travel. https://t.co/yCSesZqndr
+--------------------------------------
+at 2021-10-24 11:15:14: 6.5 magnitude earthquake strikes northeastern Taiwan, shaking buildings in Taipei, but no damage was reported. https://t.co/Tjvl2ImG00
+--------------------------------------
+at 2021-10-24 11:01:05: Colombian security forces capture the country’s most wanted drug trafficker, a rural warlord who stayed on the run for more than a decade by corrupting state officials and aligning himself with combatants on the 
+left and right. https://t.co/3MggkofGjC
+--------------------------------------
+at 2021-10-24 10:46:06: Canadian Coast Guard declares "emergency zone" around a blazing cargo ship off the coast of Canada after containers carrying more than 50 tons of a dangerous chemical caught fire and began expelling toxic gas. https://t.co/OssDGXyIa5
+--------------------------------------
+at 2021-10-24 10:30:03: Turkish President Erdogan orders 10 foreign ambassadors who called for the release of a jailed philanthropist, including the U.S. envoy, to be declared persona non grata. https://t.co/hYHi1AOp7P
+--------------------------------------
+at 2021-10-24 10:15:01: The assistant director on the set of "Rust," where Alec Baldwin fired a prop gun that killed cinematographer Halyna Hutchins, previously allowed an unsafe working environment on productions, prop maker who worked with him says. https://t.co/JNdDqY0GQx
+--------------------------------------
+at 2021-10-24 10:00:34: Elephants have evolved to be tuskless in response to ivory poaching, study finds. https://t.co/cOyRJQ7M9o
+--------------------------------------
+at 2021-10-24 09:45:08: At least 2 dead, 8 injured after a drag racing vehicle veered off a track and struck spectators of the event at an airport in Texas, authorities say. https://t.co/K6Gz44PLsy
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Source: CBS News
+--------------------------------------
+at 2021-10-24 14:20:00: California braces for "bomb cyclone" with flash flooding and dangerous mudslides expected https://t.co/12gcne1htm
+--------------------------------------
+at 2021-10-24 14:00:12: The Canadian Coast Guard said they evacuated 16 people from a container ship near Victoria, British Columbia, after a fire broke out aboard the ship on Saturday. At least 10 containers on the ship caught fire, officials said. https://t.co/tFCbBfZYgR
+--------------------------------------
+at 2021-10-24 14:00:01: As Christian nationalism attracts followers, traditional pastors fear for their faith and the 
+country. Stream the CBSN Originals documentary "An (Un)Civil War: The Evangelical Divide," now. https://t.co/HdmvQ0Ntwh https://t.co/yUtJwCUk2B
+--------------------------------------
+at 2021-10-24 13:40:00: Biden to meet with Schumer and Manchin in Delaware for more talks on social spending package https://t.co/rOkC5PDqeJ
+--------------------------------------
+at 2021-10-24 13:20:01: Thompson says Facebook is "working with" House January 6 select committee https://t.co/doSBSBM7S2
+--------------------------------------
+at 2021-10-24 13:15:32: Could the #Evergrande Debt Crisis spill over into the broader global economy? Chief Economist 
+at the IMF @GitaGopinath tells @margbrennan the Chinese government has “the ability to ring fence the problem.” https://t.co/PjABWUAzQu
+--------------------------------------
+at 2021-10-24 13:15:30: IMF Chief Economist @GitaGopinath says the group predicts inflation pressure to persist into the middle of next year, in line with prediction from Treasury Secretary @SecYellen. https://t.co/ym2vqCY3Tf
+--------------------------------------
+at 2021-10-24 13:15:25: Democrats are likely to scale back their paid leave proposal to four weeks from twelve weeks. 
+IMF Chief Economist @GitaGopinath tells @margbrennan “four weeks is better than zero, so I think that that is certainly progress made.” https://t.co/LSGGaOXAOe
+--------------------------------------
+at 2021-10-24 13:00:20: A candlelight vigil in honor of Halyna Hutchins was held in New Mexico Saturday night. The 42-year-old cinematographer was fatally shot by actor Alec Baldwin on the "Rust" film set. https://t.co/3bTxFJDUWk       
+--------------------------------------
+at 2021-10-24 12:40:00: Husband of cinematographer fatally shot on Alec Baldwin movie set speaks out: "Halyna inspired us all" https://t.co/LfJlDTdsDA
+--------------------------------------
+at 2021-10-24 12:20:00: Lava flows, toxic gases, volcanic ash and acid rain: La Palma volcano eruption continues to pose threats https://t.co/Pu51Ssi6fO
+--------------------------------------
+at 2021-10-24 12:00:02: Recess Therapy: Kids usually have no filter – and they can be smarter than you think. https://t.co/qO9Jw2VOQb
+--------------------------------------
+at 2021-10-24 11:54:53: The Afghanistan withdrawal ended in desperate evacuations and the killing of 13 US troops and 
+170 Afghan civilians by suicide bomber. Zalmay Khalilzad tells @Margbrennan: "I'm not saying it was an orderly withdrawal. This was an ugly final phase....Could have been a lot worse." https://t.co/H7TBW6P37r
+--------------------------------------
+at 2021-10-24 11:54:47: "One reason I left the government is that the debate wasn't really as it should be based on realities and facts of what happened, what was going on and what our alternatives were," Zalmay Khalilzad tells @margbrennan of his resignation. https://t.co/7z5D19CPRW
+--------------------------------------
+at 2021-10-24 11:54:41: .@margbrennan presses Zalmay Khalilzad, the US' chief negotiator with the Taliban, if he was misled by the group: "I don't allow people to mislead me. I do my homework...This was not Zal Khalilzad alone doing this. I had the military, the intelligence, everyone with me." https://t.co/vQRzADGDm5
+--------------------------------------
+at 2021-10-24 11:54:35: The CIA says al Qaeda could reconstitute in as little as a year within Afghanistan. Are we safer having left? Zalmay Khalilzad tells @margbrennan: "We are much safer than we were before we went to Afghanistan" but notes "we need to keep an eye on the situation." https://t.co/l8pe74boQB
+--------------------------------------
+at 2021-10-24 11:54:29: .@margbrennan: "Wasn't it diplomatic malpractice for the secretary of state not to be holding 
+Ghani's hand walking him through this?" @US4AfghanPeace: "We could have pushed harder. I believe in retrospect, my judgment is that we could have pressed President Ghani harder." https://t.co/xqe18jEviL
+--------------------------------------
+at 2021-10-24 11:54:23: Fmr. US envoy to Afghanistan Zalmay Khalilzad responds to H.R. McMaster's criticism that Khalilzad brokered a "surrender deal" with the Taliban: "How long does General McMaster think we should continue while losing ground each year?" https://t.co/iWKnRcPLeC
+--------------------------------------
+at 2021-10-24 11:54:18: Chairman of the Joint Chiefs of staff Mark Milley says the withdrawal from Afghanistan was a "strategic failure."Fmr. US envoy to Afghanistan Zalmay Khalilzad tells @marbrennan the U.S. did "not succeed" in building a democratic Afghanistan, "The struggle goes on," he says. https://t.co/EEuWrm2UtM
+--------------------------------------
+at 2021-10-24 11:40:01: "Space is the limit": Formula 1's CEO talks about expanding races to other American cities ahead of U.S. Grand Prix https://t.co/Zu11ohHplQ
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Source: The Associated Press
+--------------------------------------
+at 2021-10-24 14:10:27: POLL ALERT: Alabama jumps to 3rd behind Georgia, Cincinnati in AP Top 25; Iowa, Ole Miss into 
+top 10; Iowa State, BYU return.Full poll presented by @askRegions &gt;&gt; https://t.co/Po0ddrVDJy https://t.co/9mLivZy1r7
+--------------------------------------
+at 2021-10-24 13:09:54: AP has launched a college football newsletter, a twice-weekly breakdown of the latest Top 25 rankings, news and predictions you can have sent right to your inbox.Sign up here 👉 https://t.co/DYHGQHvCvdAP's college football hub 👉 https://t.co/s2rEAvxcnB https://t.co/PlTGBlC2wz
+--------------------------------------
+at 2021-10-24 12:40:45: The husband of Iranian-British charity worker Nazanin Zaghari-Ratcliffe, who has been detained for more than five years, has gone on a hunger strike again in London after a court in Iran decided she has to spend 
+another year in prison. https://t.co/cohtHAmoVt
+--------------------------------------
+at 2021-10-24 12:04:20: The death of a cinematographer on a movie set when Alec Baldwin fired a prop gun has led to calls for fundamental change in Hollywood. One network TV drama has already banished real weapons from the set and some 
+are calling for an industry-wide ban. https://t.co/HSr56noNig
+--------------------------------------
+at 2021-10-24 11:51:09: “We are doing this for Africa,” says a young scientist at the vaccine hub being coordinated by the World Health Organization to re-create the Moderna vaccine. The company isn’t helping. https://t.co/yNFpQGymUa   
+--------------------------------------
+at 2021-10-24 11:37:21: U.S. taxpayers largely funded Moderna’s COVID vaccine. The Biden administration is now leaning on the company to share its recipe. “Either we end this pandemic, or we muddle our way through,” one congressman says. https://t.co/YQNm2RCBmm
+--------------------------------------
+at 2021-10-24 11:01:59: A driver lost control during a Texas drag racing event on an airport runway and slammed into a crowd of spectators, killing two children and injuring eight other people, authorities say. A 6-year-old boy and an 8-year-old boy were killed in the crash. https://t.co/bJYx7ai8hF
+--------------------------------------
+at 2021-10-24 11:01:55: 90 years ago today, the George Washington Bridge, connecting New York and New Jersey, was officially dedicated (it opened to traffic the next day).New Jersey Governor Morgan F. Larson, left, and New York Governor Franklin D. Roosevelt formally dedicate the bridge. https://t.co/bfmog38OYI
+--------------------------------------
+at 2021-10-24 10:55:23: There is a developing College Football Playoff race between an outgoing Big 12 school and an incoming Big 12 school.#APTop25 takeaways by @ralphdrussoap https://t.co/UgkRE3AHo1
+--------------------------------------
+at 2021-10-24 10:30:18: ”I never forget you, I hear your cries and I pray for you." Pope Francis has made an impassioned plea to end the practice of returning migrants rescued at sea to Libya and other unsafe countries where they suffer “inhumane violence." https://t.co/5ClowNakk6
+--------------------------------------
+at 2021-10-24 10:17:07: Republicans drawing new legislative maps in Texas, Ohio and North Carolina say they won't use 
+racial or partisan data. Democrats say the GOP is still proposing maps that dilute Black and Latino voting power. https://t.co/gTigfNOHld
+--------------------------------------
+at 2021-10-24 10:02:20: Watch this space: The Associated Press is reporting on the Facebook Papers. Stories coming Monday.https://t.co/mZROGHeLdv
+--------------------------------------
+at 2021-10-24 09:28:37: Zimbabwean writer and filmmaker Tsitsi Dangarembga has become the first Black woman to win the Peace Prize of the German Book Trade. She has called for a “new Enlightenment,” saying a fundamental shift is needed 
+to overcome structures of racial hierarchy. https://t.co/wjxJktsLLW
+--------------------------------------
+at 2021-10-24 08:56:04: Thousands of French women have launched an online campaign to denounce the response of police 
+to reports of sexual abuse. The women say police officers engage in victim-blaming or mishandle their complaints. https://t.co/7HxZ6Hi2mS
+--------------------------------------
+at 2021-10-24 08:34:39: Uganda's president says an explosion at an eatery in a suburb of the capital that killed at least one person and wounded seven others is an apparent act of terrorism. https://t.co/y5L0yvJmpk
+--------------------------------------
+at 2021-10-24 08:13:40: What ARE these rankings, anyway. Take a trip Inside the AP Top 25 Poll 👇 https://t.co/qfR44kbYw7
+--------------------------------------
+at 2021-10-24 07:44:52: Fewer than 1% of the world’s coronavirus vaccines have gone to poor countries. Scientists in South Africa are trying to replicate Moderna’s shot in an effort to change that. https://t.co/ET6R8ZFP9v
+--------------------------------------
+at 2021-10-24 06:16:28: A West Bank settlement watchdog group says Israel is expected to move forward this week with thousands of new homes for Jewish settlers in the occupied territory. The group says that a committee is set to meet to approve 2,800 units deep in the West Bank. https://t.co/TZ1456Wr1M
+--------------------------------------
+at 2021-10-24 05:44:40: A senior U.S. diplomat has urged North Korea to refrain from additional missile tests and resume nuclear diplomacy, days after the North fired off its first underwater-launched ballistic missile in two years. https://t.co/LuKvmERLrT
+--------------------------------------
+at 2021-10-24 02:53:43: The term metaverse seems to be everywhere. Essentially, it’s a world of endless, interconnected virtual communities where people can meet, work and play. But tech companies still have to figure out how to connect their online platforms.  https://t.co/KrSBOadeqJ
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Source: The New York Times
+--------------------------------------
+at 2021-10-24 14:20:06: Children ages 5 to 11 may be eligible for Covid vaccines by early next month, according to Dr. Anthony Fauci. He projected a timetable for young Americans to have at least one dose by Thanksgiving, and to be fully immunized by the holidays. https://t.co/ID6oVfUlhc
+--------------------------------------
+at 2021-10-24 14:00:06: Agnes Jebet Tirop, 25, a long-distance runner from Kenya, was stabbed to death in her home this month. Her husband was arrested in the killing, authorities said. The case has shocked the nation, drawing attention to violence against women in Kenya. https://t.co/q87yzxozrJ
+--------------------------------------
+at 2021-10-24 13:40:07: Jay Black, whose majestic voice on songs like "Cara, Mia" and "Only in America" made Jay and the Americans a potent force in pop music in the 1960s, has died at 82. https://t.co/idKOW4m6Rn
+--------------------------------------
+at 2021-10-24 13:31:54: Big week for tartar sauce, folks. https://t.co/yi1AKESn4P
+--------------------------------------
+at 2021-10-24 13:14:02: Using a combination of digital sleuthing and a 19th-century law written to curb the Ku Klux Klan, the lawyers for the nine plaintiffs in the Charlottesville case are hoping their civil suit will both punish the organizers and deter others. https://t.co/RznrlKygwg
+--------------------------------------
+at 2021-10-24 12:40:06: Watch: Mourners gathered in Albuquerque to remember the cinematographer Halyna Hutchins. Hutchins was fatally shot by Alec Baldwin on a New Mexico film set when the actor fired a prop gun he was told was unloaded. https://t.co/8U2V0OODAB https://t.co/AxSA7OUgEr
+--------------------------------------
+at 2021-10-24 12:30:04: The hunt for an elusive Somali militant illustrates why Al Shabab, an Al Qaeda affiliate, is at its strongest in years — despite a decade of American covert action. https://t.co/NU1JV1uPGV
+--------------------------------------
+at 2021-10-24 12:20:06: In Opinion"Former President Donald Trump’s loud and proud declaration that paying very little 
+in taxes 'makes me smart' was just a more brazen articulation of what has become party orthodoxy" for the Republican Party, writes @BCAppelbaum. https://t.co/ajkLYDjgM0
+--------------------------------------
+at 2021-10-24 12:05:05: India and Pakistan are halfway through their face off in the cricket World Cup. It's one of the biggest sporting rivalries, watched by hundreds of millions of people around the world. Here's why. https://t.co/lRjq32AV3d
+--------------------------------------
+at 2021-10-24 11:50:04: Charlie Hamlin, a former Olympic rower who dominated races well into his 70s, died in May. On 
+Sunday, his longtime teammates plan to row in the Head of Charles Regatta with an empty seat in his memory. https://t.co/orW32XB1w0
+--------------------------------------
+at 2021-10-24 11:40:02: One of the toughest places to be a woman in Japan is within its royal family.Earlier this month, the imperial household revealed that Princess Mako, 30, had suffered from PTSD because of unrelenting public disapproval of her fiancé. https://t.co/liswGjGXpH
+--------------------------------------
+at 2021-10-24 11:30:03: As vaccine mandates took effect in New York, the mass resignations some experts had predicted 
+did not occur. But for 4% of NYC public school employees — part of a sizable contingent across the U.S. — resistance to the vaccines has won out over paychecks. https://t.co/b8W6k2NN58 https://t.co/GM5FxyvEk4
+--------------------------------------
+at 2021-10-24 11:13:58: “Barcelona was the team everyone wanted to watch. It is a much less appealing prospect now that all it can offer is the chance to bear witness to the decline, to the stark reality of life after Lionel Messi,” @RorySmith writes. https://t.co/usEwpqjhYG
+--------------------------------------
+at 2021-10-24 11:00:28: Ole Miss running back Jerrion Ealy splintered LSU's defense for a touchdown on a play that showed just how far the Tigers have fallen since winning a national championship two seasons ago. https://t.co/hCIFvo7tNh--------------------------------------
+at 2021-10-24 10:45:45: One of the biggest rivalries in world sport kicks off in couple hours. Here is why the #INDvPAK cricket match matters to the hundred of millions of people who tune in. https://t.co/QhOgIBAt1k
+--------------------------------------
+at 2021-10-24 10:40:04: Cambodia is pressing the Metropolitan Museum of Art to document how it acquired dozens of Khmer Empire antiquities that Cambodian officials, citing new evidence, believe were looted during the country’s decades of war and tumult. https://t.co/SohRgS8Mfj
+--------------------------------------
+at 2021-10-24 10:20:02: The Church of the Last Testament has not been politically active or spoken out against the Russian government. The arrest of their leader reveals the true extent of the nation's repression, which reaches even to 
+the depths of the Siberian forest. https://t.co/sll5xon9kW
+--------------------------------------
+at 2021-10-24 10:10:05: ‘It’s so easy to destroy something with untruths.’How a campiagn against a small federal program in Montana built on ‘alternative facts’ tapped into the bitter partisan divide in America.  Sad, revealing tale by 
+⁦@reidepstein⁩  https://t.co/kMwSSX2pmH
+--------------------------------------
+at 2021-10-24 10:00:15: The chance to swim with whale sharks — the world’s biggest fish — led to a tourism boom in a Philippines town. But conservation groups are decrying the hand-feeding that keeps the gentle giants around. https://t.co/3HMxFpgtVz https://t.co/KOjCPxsEUA
+--------------------------------------
+at 2021-10-24 09:50:03: Barcelona used to be the hottest ticket in town. Now, only the hardy few want to be around to 
+watch the decline. A piece on a club caught between yesterday and tomorrow in an unhappy now https://t.co/aeCbhkYfuO  
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Source: The Wall Street Journal
+--------------------------------------
+at 2021-10-24 14:14:39: Dr. Anthony Fauci said Covid-19 vaccines could be available for children ages 5 to 11 by early November https://t.co/GPYwlvSMy1
+--------------------------------------
+at 2021-10-24 14:05:03: People are encouraged to wipe out the spotted lanternfly, but that leaves some feeling conflicted https://t.co/Ouj7KCSHyU
+--------------------------------------
+at 2021-10-24 13:53:25: A San Francisco In-N-Out Burger wasn’t checking customers’ vaccination status. After the health department issued a final violation notice, the company responded: “We refuse to become the vaccination police.” https://t.co/JtrQWlwRxU
+--------------------------------------
+at 2021-10-24 13:32:52: The cost of home insurance is soaring. Here's what to do about it. https://t.co/yniG60oPRm    
+--------------------------------------
+at 2021-10-24 13:15:04: Vikings crossed the Atlantic and lived in North America as early as 1021, scientists found by 
+analyzing artifacts with a new radiocarbon dating technique https://t.co/4iTwYRJWB5
+--------------------------------------
+at 2021-10-24 13:00:27: Kiss frontman Gene Simmons is putting his Las Vegas home on the market for $14.95 million, less than a year after buying the roughly 11,000-square-foot property. He said his wife and children are "not fans of 115-degree weather." https://t.co/lCkb7jpV83
+--------------------------------------
+at 2021-10-24 12:45:05: Friction between adult children and a new partner can do a lot of damage. Here’s how to make sure it doesn’t. https://t.co/7j5dwn8kr5
+--------------------------------------
+at 2021-10-24 12:30:15: A Taliban commander used to run suicide-bombing squads in Kabul. Today he is busy mediating domestic disputes and fielding complaints about stolen cars as a chief of police for the Afghan capital. https://t.co/VRB334o2Ki
+--------------------------------------
+at 2021-10-24 12:15:04: Online gambling operators are spending hundreds of millions of dollars on marketing, putting sports wagering in front of the American consumer. Some regulators are expressing concern. https://t.co/oRX9naVuv8     
+--------------------------------------
+at 2021-10-24 12:08:00: Companies behind staple foods said consumers can expect higher prices at the grocery store. But as @WSJheard explains, there may be a limit to how much customers will tolerate. https://t.co/HoJK1F64y9  #WSJWhatsNow https://t.co/ehPYoEuQCi
+--------------------------------------
+at 2021-10-24 12:00:15: Prop weapons are in focus after an accident involving Alec Baldwin killed one filmmaker and injured another on a set in New Mexico. Here's what to know about them. https://t.co/5COutH06qp
+--------------------------------------
+at 2021-10-24 11:47:06: The Atlanta Braves advanced to their first World Series in more than 20 years, beating the heavily favored Los Angeles Dodgers in the National League and capping a remarkable recovery from the loss of their best 
+player https://t.co/deXU13H11O
+--------------------------------------
+at 2021-10-24 11:38:46: The NFL’s investigation into allegations of serial misconduct and sexual harassment at the Washington Football Team ended months ago without a written report. Recent events have prompted a reinvigorated question: Why? https://t.co/oBs0vFK8Hz
+--------------------------------------
+at 2021-10-24 11:15:08: Since launching Tuesday, the ProShares Bitcoin Strategy ETF has amassed $1.2 billion in investor assets, the quickest billion-dollar fundraising on record. But that success is almost certain to come at fundholders’ expense, analysts say. https://t.co/eOiajerpar
+--------------------------------------
+at 2021-10-24 11:00:23: California recorded its driest year in a century, marked by above-average wildfires, extreme heat and extended droughts https://t.co/2YbNRHQZbH
+--------------------------------------
+at 2021-10-24 10:46:46: Single Americans are seeking homes, but the pool of available options is shrinking. “I’ll never be able to catch up,” said a 34-year-old software engineer in Austin, Texas. “How much I’m able to save isn’t fast enough for how fast costs are rising.” https://t.co/20oNc9LJNr
+--------------------------------------
+at 2021-10-24 10:30:05: Working in his Los Angeles studio, former Beatles drummer Ringo Starr has continued to make joyous new music during the pandemic. https://t.co/WQ0ZDK7qw0
+--------------------------------------
+at 2021-10-24 10:15:03: Facebook's services are used to spread religious hatred in India, internal documents show. Company researchers identified calls to violence that coincided with the 2020 riots in Delhi that left 53 dead. https://t.co/z0aQ
+dead. https://t.co/z0aQIChLcX
+--------------------------------------
+at 2021-10-24 10:00:12: With one of the world’s highest Covid-19 vaccination rates, Portugal is learning to live with the virus and being watched by other countries as a possible way forward https://t.co/4U4C3VYUNT       
+--------------------------------------
+at 2021-10-24 09:45:03: From @WSJopinion: Future View: At best, cancel culture is a kind of chronic petulance. At worst, it is the antithesis of free speech. https://t.co/YVrw5P3utH
